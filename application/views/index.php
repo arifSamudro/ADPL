@@ -103,20 +103,9 @@
                     <!-- <p class="lead">Profil Kesehatan:</p> -->
                 </div>
                 <div class="row">
-                    <div class="col-sm-6 col-md-6">
-                        <div class="media services-wrap wow fadeInDown">
-                            <div class="pull-left">
-                                <img class="img-responsive" src="<?php echo base_url().'assets/front/images/services/services3.png'?>">
-                            </div>
-                            <div class="media-body"><br>
-                                <a href="<?php echo base_url().'index.php/adminlog' ?>">
-                                    <h3 class="media-heading">Login Pengelola Gedung</h3>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
                     
-                    <div class="col-sm-6 col-md-6">
+                    
+                    <div class="col-sm-12 col-md-12">
                         <div class="media services-wrap wow fadeInDown">
                             <div class="pull-left">
                                 <img class="img-responsive" src="<?php echo base_url().'assets/front/images/services/services3.png'?>">

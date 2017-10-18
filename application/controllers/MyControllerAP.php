@@ -196,7 +196,7 @@ function home1(){
 }
         
 function tablegedung(){
-	$gedung = $this->mymodel->getDataNews;  
+	$gedung = $this->mymodel->getDataNews();  
 	// $this->load->view('view', array('data' => $data));
 	$this->load->view('tablegedung',array('gedung' => $gedung)); 
 }

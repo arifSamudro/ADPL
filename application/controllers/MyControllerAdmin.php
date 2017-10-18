@@ -4,12 +4,12 @@ class MyControllerAdmin extends CI_Controller {
 	public function __construct() {   
 		parent::__construct();   
 		$this->load->model('mymodel');
-		if(!$this->session->userdata('username')) {
+		// if(!$this->session->userdata('username')) {
 
-		}  else {
-			$this->session->set_flashdata('pesan', 'user / pass ilegal !');
-			redirect(base_url('MyControllerAdmin'));
-		}
+		// }  else {
+		// 	$this->session->set_flashdata('pesan', 'user / pass ilegal !');
+		// 	redirect(base_url('MyControllerAdmin'));
+		// }
 	} 
  // public function __construct() {   
 	// 	parent::__construct();   
@@ -19,7 +19,12 @@ class MyControllerAdmin extends CI_Controller {
 
 function adminlogin() {   
 	$data['err_message']="";
-	$this->load->view('adminlogin', $data);  
+	if($this->session->userdata('username')){
+		redirect (base_url('index.php/home'));
+	} else {
+		$this->load->view('adminlogin', $data);  
+	}
+	
 	}   
 
 
